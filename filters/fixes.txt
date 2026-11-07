@@ -1,0 +1,9 @@
+! Myelin quick filter fixes
+! Rules here reach every Myelin user within a few hours, without waiting for a store update.
+! Same syntax as the filter lists (EasyList / uBlock Origin):
+!   ||ads.example.com^                      block a domain
+!   @@||cdn.example.com^$script             exception for a false positive
+!   example.com##.ad-banner                 hide elements on a site
+!   example.com##div:has-text(Sponsored)    procedural filter
+!   example.com##+js(set-cookie, consent, rejected)   scriptlet bundled with Myelin
+! Site-specific rules only: generic cosmetic filters and unknown scriptlets are ignored.
